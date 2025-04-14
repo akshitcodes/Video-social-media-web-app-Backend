@@ -3,6 +3,7 @@ import { registerUser, loginUser, logoutUser, refreshAccessToken } from "../cont
 import { upload } from "../middlewares/multer.middleware.js";
 import { verifyJWT } from "../middlewares/auth.middleware.js";
 import { changePassword, getCurrentUser, getUserChannelProfile, getWatchHistory, updateAccountdetails, updateUserAvatar, updateUserCoverImage } from "../controllers/user.controller.js";
+
 const router = Router()
 router.route("/register").post(
     //upload is middleware with fields method as multiple files are there

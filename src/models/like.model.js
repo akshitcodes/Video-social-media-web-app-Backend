@@ -13,6 +13,7 @@ const likeSchema=new Schema(
         type:Schema.Types.ObjectId,
         ref:"Tweet"
     },
+    
     likedBy:{
         type:Schema.Types.ObjectId,
         ref:"User"
@@ -23,4 +24,4 @@ const likeSchema=new Schema(
     }
 )
 
-export default Like=mongoose.Schema("Like",likeSchema)
+export const Like=mongoose.model("Like",likeSchema)

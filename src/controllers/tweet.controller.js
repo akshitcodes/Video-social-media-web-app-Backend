@@ -14,6 +14,10 @@ const createTweet = asyncHandler(async (req, res) => {
     }
 
     try {
+       // console.log("req.user is: ",req.user)
+        console.log("req.user._id is: ",req.user?._id);
+        console.log("content is: ",content);
+        
         await Tweet.create({
             content: content,
             // owner: new mongoose.Types.ObjectId(req.user?._id),
