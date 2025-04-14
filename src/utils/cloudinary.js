@@ -90,7 +90,7 @@ const deleteFromCloudinary = async (publicId) => {
     console.error("Error during Cloudinary delete:", error);
     return null;
   }
-};
+};   
 
 export { uploadOnCloudinary ,deleteFromCloudinary};
 
