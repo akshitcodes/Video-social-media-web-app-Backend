@@ -65,8 +65,8 @@ userSchema.methods.isPasswordCorrect= async function(password){
         username:this.username,
         fullName: this.fullName
     },
-   // process.env.ACCESS_TOKEN_SECRET,
-   "V6SmmzO2h9jDmup5ncOcYXC6E",
+   process.env.ACCESS_TOKEN_SECRET,
+  // "V6SmmzO2h9jDmup5ncOcYXC6E",
     {
         expiresIn://process.env.ACCESS_TOKEN_EXPIRY,
         "1d"
